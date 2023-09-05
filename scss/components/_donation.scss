@@ -1,0 +1,63 @@
+.donation{
+    background-color:$color-black;
+    grid-column: full-start /full-end;
+    padding: 5rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(40rem,1fr));
+    align-items: center;
+    justify-content: center;
+}
+
+// .donation__text{
+//     padding: 2rem;
+// }
+
+.donation__stats{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem ,1fr));
+    align-items: center;
+    justify-content: center;
+    grid-column-gap: 1rem; 
+    grid-row-gap: 1.5rem;
+    
+    &--row{
+        justify-self: start;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+        
+       
+        li{
+         @include heading_secondary(1.3rem, $color-white)
+        }
+
+    }
+
+}
+.rectangle{
+    &--green{
+        @include rectangle($green-secondary);
+    }
+    &--purple{
+        @include rectangle($color-purple);
+    }
+    &--caremel{
+        @include rectangle($caremel);
+    }
+    &--yellow{
+        @include rectangle($yellow);
+    }
+    &--hotpink{
+        @include rectangle($hot-pink)
+    }
+    }
+
+
+
+.donation__chart{
+    width: 70%;
+    height: 60%;
+    margin: 0 auto;
+    fill: $color-black;
+}

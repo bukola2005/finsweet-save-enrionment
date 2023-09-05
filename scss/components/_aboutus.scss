@@ -1,0 +1,19 @@
+.aboutus{
+    grid-column: center-start/ center-end;
+    margin: 8rem 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(40rem, 1fr));
+    align-items: center;
+    justify-content: center;
+    grid-column-gap: 3rem;
+    grid-row-gap:4rem;
+
+
+    &__video{
+        align-items:center;
+        max-width: 80%;
+        justify-self: center;
+
+        
+    }
+}

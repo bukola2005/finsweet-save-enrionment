@@ -1,0 +1,143 @@
+.heading__tertiary{
+    font-weight: 400;
+    font-size: 1.3rem;
+}
+
+// .heading__secondary{
+//     font-weight: 500;
+//     font-size: 2rem;
+
+//     // &--white{
+//     //     color: $color-white;
+//     // }
+// }
+
+// .heading-1{
+//     font-weight: 700;
+//         font-size: 6.4rem;
+//     }
+
+
+    // .heading-3{
+    //     font-weight: 700;
+    //     font-size: 1.6rem;
+    //     color: $primary-text;
+    //     text-transform: uppercase;
+    //     letter-spacing: 2px;
+    //     &::before{
+    //         background-color: $primary-text;
+    //         height: 2px;
+    //         width: 4.5rem;
+    //         content: " ";
+    //         display: inline-block;
+    //         margin-right: 1rem;
+    //     }
+    // }
+
+    // %heading-2{
+    //     font-weight: 700;
+    //     font-size: 4.6rem;
+    //     width: 80%;
+    //     height: auto;
+    // }
+    // .heading-2{ 
+    //     &--blue{
+    //         @extend %heading-2;
+    //         color: $primary-text;
+    //         // margin: 0 4rem;
+    //     } 
+    
+    //         &--white{
+    //             @extend %heading-2;
+    //             color: $color-white;
+    //         }
+    // }
+
+    // .heading-3--white{
+
+    // }
+   
+
+// .heading-4{
+//     font-family: 700;
+//     font-size: 2rem;
+//     color: $color-white;
+// }
+
+// %paragh{
+//         font-weight: 400;
+//         font-size: 1.6rem;
+// }
+
+
+// .paragh--white{
+//     @extend %paragh;
+//     color: $color-white;
+// }
+
+// 700 
+.heading{ 
+&_primary{
+    @include heading_primary($medium-font,$primary-text);
+    // width: 80%;
+    //     height: auto;
+}
+&_medium{
+    @include heading_primary($medium-font, $color-white);
+}
+&_sub{
+    @include heading_primary($small-font,$primary-text);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    &::before{
+        background-color: $primary-text;
+        height: 2px;
+        width: 4.5rem;
+        content: " ";
+        display: inline-block;
+        margin-right: 1rem;
+    }
+}
+&_mini{
+    @include heading_primary($mini-font,$primary-text);
+}
+
+&_little{
+    @include heading_primary($small-font,$color-white);
+}
+&-4{
+    @include heading_primary($mini-font,$color-white);
+}
+}
+
+// 400
+.paragh{
+    &_white{
+        @include paragh($color-white);
+        
+    }
+    &_blue{
+        @include paragh($secondary-text);
+        
+    }
+   
+}
+
+// 500
+.sub{
+    &_main{
+        @include heading_secondary($medium-font,$primary-text);
+    }
+    &_title{
+        @include heading_secondary($mini-font,$color-light-black);
+    }
+    &_text{
+        @include heading_secondary($mini-font,$primary-text);
+    }
+    &_small{
+        @include heading_secondary($small-font,$primary-text);
+        letter-spacing: 2px;
+        text-transform: uppercase;
+    }
+
+}

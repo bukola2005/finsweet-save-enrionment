@@ -1,0 +1,90 @@
+.uctext{
+    text-align: center !important;
+  }
+  
+
+  %btn{
+    border: none;
+    border-radius:0;
+    --webkit-border-radius: 0;
+    -moz-border-radius:0;
+    -ms-border-radius:0;
+    -o-border-radius:0;
+    -webkit-border-radius:0;
+    font-family: $font-primary;
+    font-size: $small-font;
+    font-weight: 500;
+    //text-transform: uppercase;
+   // padding: 1.8rem 3rem;
+    cursor: pointer;
+    transition: all .2s;
+}
+
+.btn--green{
+    @extend%btn;
+    background:$green-primary;
+    color: $color-white;
+    padding: 2rem 3.5rem;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    -webkit-border-radius: 4px;
+}
+.btn--blue{
+    @extend %btn;
+    padding: 1rem 3rem;
+    background-color: $primary-text;
+    color: $color-white;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    -webkit-border-radius: 4px;
+}
+.btn--white{ 
+    @extend%btn;
+    color: $color-black;
+    background-color: $color-white;
+    border-radius: .4rem;
+    -webkit-border-radius: .4rem;
+    -moz-border-radius: .4rem;
+    -ms-border-radius: .4rem;
+    -o-border-radius: .4rem;
+    &-sm{ 
+    padding: 1rem 2rem;
+}
+    &-bl{
+        padding: 2rem 3rem;
+    }
+}
+.btn--arrow{
+    @extend %btn;
+    background-color: $color-white;
+    width: 5rem;
+    height: 5rem;
+    justify-self: end;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.mb-tn{
+    margin-bottom: 1rem;
+}
+.mb-sm{
+    margin-bottom: 2rem;
+}
+.mb-md{
+    margin-bottom: 3rem;
+}
+.mb-lg{
+    margin-bottom: 4rem;
+}
+.mb-hg{
+    margin-bottom: 8rem;
+}
+

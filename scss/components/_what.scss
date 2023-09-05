@@ -1,0 +1,36 @@
+.what{
+    background-color: $green-tertiary;
+    grid-column: full-start /full-end;
+    margin: 5rem 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(40rem, 1fr));
+    align-items: center;
+    justify-content: center;
+    grid-column-gap: 3rem;
+    // &__details{
+    //     margin: 5rem 0;
+    //     display: grid;
+    //     grid-template-columns: repeat(auto-fit,minmax(40rem, 1fr));
+    //     align-items: center;
+    //     justify-content: center;
+    //     grid-column-gap: 3rem;
+        
+    // }
+
+    &__text{
+        padding: 7rem ;
+    }
+
+    &__value{
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 2rem;
+
+    }
+    
+    &__img{
+        justify-self: center;
+        max-width: 60%;
+    }
+}

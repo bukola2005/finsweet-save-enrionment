@@ -1,0 +1,25 @@
+.support{
+    // background-color: burlywood;
+    grid-column: center-start/ center-end;
+    margin: 17rem 0;
+
+    &__text{
+       display: flex;
+       gap: 2rem;
+       align-items: center;
+        .long_line{
+            width:80%;
+            height: 1px;
+            background-color: #E5E5E5;
+            display: inline-block;
+       }
+    }
+   
+    &__logos{
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(15rem, 1fr));
+        grid-column-gap: 4rem;
+        grid-row-gap: 2rem;
+        margin-top: 2.5rem;
+    }
+}

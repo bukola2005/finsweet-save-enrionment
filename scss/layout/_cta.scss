@@ -1,0 +1,38 @@
+.cta{
+    // background-color: aquamarine;
+    grid-column: center-start/ center-end;
+    padding: 15rem 0;
+    
+    &__contain{
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-image: linear-gradient(rgba($color-black, .5),rgba($color-black, .5)),url('/img/enviroment__img.jpg');
+        padding: 9rem 15rem;
+        border-radius: 1.2rem;
+        -webkit-border-radius: 1.2rem;
+        -moz-border-radius: 1.2rem;
+        -ms-border-radius: 1.2rem;
+        -o-border-radius: 1.2rem;
+}
+}
+
+.button-row{
+    // display: flex;
+    // align-items: center;
+    // justify-content: center;
+    // gap: 5rem;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-column-gap: 4rem;
+    justify-items: center;
+    align-items: center;
+
+    & > button:first-child{
+        justify-self: end;
+    }
+
+    & > button:last-child{
+        justify-self: start;
+    }
+}

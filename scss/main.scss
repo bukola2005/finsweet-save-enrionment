@@ -1,3 +1,30 @@
-body{
-    background-color: red;
-}
+@import "./abstracts/variables";
+@import "./abstracts/mixins";
+
+@import "./base/base";
+@import "./base/typography";
+@import "./base/utilities";
+
+
+@import "./components/aboutus";
+@import "./components/donation";
+@import "./components/header";
+@import "./components/popup";
+@import "./components/what";
+@import "./components/about__awards";
+@import"./components/about__header";
+@import"./components/about__mission";
+@import"./components/about__ourjourney";
+@import"./components/about__ourteam";
+@import"./components/about__video";
+
+@import "./layout/cta";
+@import "./layout/event";
+@import "./layout/footer";
+@import "./layout/navbar";
+@import "./layout/news";
+@import "./layout/project";
+@import "./layout/support";
+
+@import "./pages/home";
+@import "./pages/about";
