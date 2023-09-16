@@ -1,4 +1,14 @@
 .about__mission{
-    background-color: darkgray;
+    background-color: $green-tertiary;
+    padding: 7rem;
     grid-column: full-start/ full-end;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(40rem,1fr));
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+
+    &--content{
+        padding: 9rem;
+    }
 }

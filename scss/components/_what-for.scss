@@ -1,0 +1,14 @@
+.what-for{
+    background-color: $green-tertiary;
+    grid-column: full-start / full-end;
+
+    margin: 9rem 0;
+    padding: 7rem;
+
+    .what_word{
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(30rem,1fr));
+        grid-column-gap:3rem;
+        grid-row-gap: 2rem;
+    }
+}

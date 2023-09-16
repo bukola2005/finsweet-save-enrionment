@@ -1,4 +1,10 @@
 .about__header{
-    background-color: blueviolet;
+    // background-color: blueviolet;
     grid-column: center-start/ center-end;
+    margin: 17rem 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(40rem,1fr));
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
 }

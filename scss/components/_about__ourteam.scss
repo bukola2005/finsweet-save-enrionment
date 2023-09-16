@@ -1,4 +1,48 @@
 .about__ourteam{
-    background-color: indianred;
+    // background-color: indianred;
     grid-column: center-start/ center-end;
+    margin: 6rem 0;
+
+    .about__teams{
+        padding: 4rem;
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(20rem,1fr));
+        gap: 5rem;
+
+        & > div{
+            transition: transform .3s;
+            -webkit-transition: transform .3s;
+            -moz-transition: transform .3s;
+            -ms-transition: transform .3s;
+            -o-transition: transform .3s;
+
+            &:hover{
+                transform: translateY(-1.5rem) scale(1.03);
+                -webkit-transform: translateY(-1.5rem) scale(1.03);
+                -moz-transform: translateY(-1.5rem) scale(1.03);
+                -ms-transform: translateY(-1.5rem) scale(1.03);
+                -o-transform: translateY(-1.5rem) scale(1.03);
+            }
+
+            & > h3{
+                @include heading_secondary($small-font,$primary-text);
+                text-align: center;
+            }
+            & >p {
+                @include heading_secondary(1.2rem,$primary-text);
+                text-align: center;
+            }
+            & >img{
+                margin-bottom: 1.7rem;
+            }
+        }
+    }
+
+    .teams__icon{
+        display: grid;
+        grid-template-columns: repeat(3,.2fr);
+        margin-top: 1.7rem;
+        align-items: center;
+        justify-content: center;
+    }
 }

@@ -1,0 +1,9 @@
+.what-we-do__header{
+    // background-color: black;
+    margin: 17rem 0;
+    grid-column: center-start/ center-end;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(35rem,1fr));
+    grid-gap: 4rem;
+
+}

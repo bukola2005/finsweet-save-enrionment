@@ -1,0 +1,14 @@
+.donate__header{
+    background-color: $green-tertiary;
+    grid-column: full-start / full-end;
+    margin: 8rem 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(30rem,1fr));
+    gap: 4rem;
+    padding: 8rem;
+    // align-items: center;
+
+    & > img{
+        justify-self: flex-end;
+    }
+}

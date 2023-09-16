@@ -28,11 +28,11 @@
     justify-items: center;
     align-items: center;
 
-    & > button:first-child{
+    & > a:first-child{
         justify-self: end;
     }
 
-    & > button:last-child{
+    & > a:last-child{
         justify-self: start;
     }
 }

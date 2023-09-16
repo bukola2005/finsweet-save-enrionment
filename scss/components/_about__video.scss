@@ -1,4 +1,37 @@
 .about__video{
-    background-color: crimson;
-    grid-column: center-start/ center-end;
+    background-color: $green-tertiary;
+    margin: 30rem 0;
+    grid-column: full-start/ full-end;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 100;
+
+    @include respond(tab-port){
+        // margin: 20rem 0 5rem 0;
+        margin-top: 20rem;
+        margin-bottom: 5rem;
+    }
+
+    #bg-video{
+        // margin: 0 auto;
+        max-width: 70%;
+        height: auto;
+        position: absolute;
+        // right: 7rem;
+        top: -20rem;
+        left: 20rem;
+        border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+
+    @include respond(tab-port){
+        top: -30rem;
+        left: 10rem;
+    }
+    }
+
 }

@@ -4,6 +4,7 @@
 @import "./base/base";
 @import "./base/typography";
 @import "./base/utilities";
+@import "./base/animation";
 
 
 @import "./components/aboutus";
@@ -11,12 +12,36 @@
 @import "./components/header";
 @import "./components/popup";
 @import "./components/what";
+
 @import "./components/about__awards";
 @import"./components/about__header";
 @import"./components/about__mission";
-@import"./components/about__ourjourney";
 @import"./components/about__ourteam";
 @import"./components/about__video";
+@import "./components/about__ourjourney";
+
+@import "./components/what-we-do__header";
+@import "./components/what-for";
+
+@import "./components/media__header";
+
+@import "./components/contact__header";
+@import "./components/contact__form";
+@import "./components/contact__map";
+
+@import "./components/donate__header";
+@import "./components/donate__contribute";
+@import "./components/donate__funds";
+
+@import "./components/our__project";
+@import "./components/project__post";
+
+@import "./components/blog__post";
+
+@import "./components/event__header";
+@import "./components/event__about";
+
+@import "./components/popup";
 
 @import "./layout/cta";
 @import "./layout/event";
@@ -28,3 +53,10 @@
 
 @import "./pages/home";
 @import "./pages/about";
+@import "./pages/what-we-do";
+@import "./pages/media";
+@import "./pages/contactus";
+@import "./pages/donation";
+@import "./pages/project-readmore";
+@import "./pages/blog__post";
+@import "./pages/event-readmore";

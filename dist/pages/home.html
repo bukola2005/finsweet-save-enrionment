@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
@@ -17,25 +20,21 @@
     <ul class="nav">
         <li class="nav__item"><a href="home.html" class="nav__link current-page">Home</a></li>
         <li class="nav__item"><a href="about.html" class="nav__link">About us</a></li>
-        <li class="nav__item"><a href="#" class="nav__link">What We Do</a></li>
-        <li class="nav__item"><a href="#" class="nav__link">Media</a></li>
-        <li class="nav__item"><a href="#" class="nav__link">Contact</a></li>
+        <li class="nav__item"><a href="what-we-do.html" class="nav__link">What We Do</a></li>
+        <li class="nav__item"><a href="media.html" class="nav__link">Media</a></li>
+        <li class="nav__item"><a href="contactus.html" class="nav__link">Contact</a></li>
 
-         <a href="#" class="btn--blue nav__btn">Donate</a>   
+         <a href="donation.html" class="btn--blue nav__btn">Donate</a>   
     </ul>
-    <div class="sidebar">
-        <input type="checkbox" class="sidebar__checkbox" id="navi-toogle">
-        <label for="navi-toogle" class="sidebar__button">
-          <span class="sidebar__icon">&nbsp;</span>
-        </label>
-      </div>
+    <i class="fa-solid fa-bars fa-4x open-menu"></i>
+    <i class="fa-solid fa-xmark fa-4x  close-menu"></i>
    </nav>
 
    <header class="header">
     <h1 class="header__content mb-tn">Save the environment today for a better tomorrow</h1>
 
     <div class="header__btn">
-        <button class=" btn--white btn--white-bl">What we do</button>
+        <a href="what-we-do.html" class=" btn--white btn--white-bl">What we do</a>
         <a class="header__play">
             <span class="header__play--arrow"><span class="header__play--arrow-1">&#9654</span></span>
             <h3 class="heading_little">Play Video</h3></a>
@@ -60,7 +59,7 @@
             <p class="paragh_blue mb-lg"> ‍Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.</p>
           
     
-        <button class="btn--green">Learn more</button>
+        <a href="event-readmore.html" class="btn--green">Learn more</a>
        </div>
        
        <div class="aboutus__video">
@@ -142,7 +141,7 @@
         <p class="paragh_white mb-md">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.
         </p>
-        <button class="btn--white btn--white-sm">See more</button>
+        <a href="project-readmore.html" class="btn--white btn--white-sm">See more</a>
     </div>
 
     <div class="project__content project__content--2">
@@ -150,14 +149,14 @@
         <p class="paragh_white mb-md">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.
         </p>
-        <button class="btn--white btn--white-sm">See more</button>
+        <a href="project-readmore.html" class="btn--white btn--white-sm">See more</a>
     </div>
     <div class="project__content project__content--3">
         <h3 class="heading-4 mb-sm">Wildlife safety program 2021</h3>
         <p class="paragh_white mb-md">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.
         </p>
-        <button class="btn--white btn--white-sm">See more</button>
+        <a href="project-readmore.html" class="btn--white btn--white-sm">See more</a>
     </div>
     </div>
    </section>
@@ -203,8 +202,8 @@
         <h2 class="heading_medium mb-md">You can contribute to make the environment greener!</h2>
 
         <div class="button-row">
-            <button class="btn--green">Join as a volunteer</button>
-            <button class="btn--white btn--white-bl">Donate</button>
+            <a  href="#popup" class="btn--green">Join as a volunteer</a>
+            <a href="donation.html" class="btn--white btn--white-bl">Donate</a>
         </div>
     </div>
    </section>
@@ -262,7 +261,7 @@
                 <h3 class="heading_mini">Say no to plastic usage and save the planet</h3>
             </div>
 
-            <a href="#" class="btn--arrow "><span class="event__btn">&rarr;</span></a>
+            <a href="event-readmore.html" class="btn--arrow "><span class="event__btn">&rarr;</span></a>
         </div>
 
         <div class="event__item">
@@ -281,7 +280,7 @@
                 <h3 class="heading_mini">Weekly cleaning program</h3>
             </div>
 
-            <a href="#" class="btn--arrow "><span class="event__btn">&rarr;</span></a>
+            <a href="event-readmore.html" class="btn--arrow "><span class="event__btn">&rarr;</span></a>
         </div>
     </div>
    </section>
@@ -323,5 +322,50 @@
         </div>
     </div>
    </footer>
+
+   <div class="popup" id="popup">
+    <div class="popup__content">
+        <div class="popup_grid"> 
+            <h2 class="heading_primary">Join as a volunteer</h2>
+            <a href="#section-tours" class="popup__close">&times;</a>
+        </div>
+        <p class="paragh_blue mb-lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspen varius enim in eros elementum tristique. </p>
+        <form class="form">
+
+            <div class="form__grid mb-tn">
+                <div>
+                    <div class="mb-sm">
+                        <label for="first-name" class="form__label">First Name</label>
+                    </div>
+                <input type="text" name="first-name" id="first-name" class="form__input" >
+                </div>
+    
+                <div>
+                    <div class="mb-sm"><label for="last-name" class="form__label">Last Name</label></div>
+                    <input type="text" name="last-name" id="last-name"class="form__input" >
+                </div>
+            </div>
+           
+            <div class="mb-tn">
+                <div class="mb-sm">
+                    <label for="email-id" class="form__label">Email Id</label>
+                </div>
+            
+                <input type="email" name="email-id" id="email-id" class="form__input" >
+            </div>
+            
+            <div class="form__message mb-md">
+                <div class="mb-sm">
+                    <label for="message" class="form__label">Message</label>
+                </div>
+                <input type="text" class="form__input">
+            </div>
+            <button class="btn--green form__btn">Send message</button>
+        </form>
+
+        
+    </div>
+  </div>
+  <script src="/app.js"></script>
 </body>
 </html>

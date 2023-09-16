@@ -1,0 +1,11 @@
+.blog__post{
+    margin: 17rem 0;
+    grid-column: center-start /center-end;
+    &-items{
+        li{
+            font-size: $small-font;
+            @include paragh($primary-text);
+            list-style: disc;
+        }
+    }
+}

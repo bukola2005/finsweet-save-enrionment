@@ -6,6 +6,7 @@
     grid-column: full-start /full-end;
     padding: 10rem;
     padding-top: 6rem;
+    margin: 10rem 0;
   
     font-family: 700;
     display: grid;
@@ -19,12 +20,16 @@
       font-family: inherit;
         font-size: $larage-font;
         color: $color-white;
+        animation-name: moveInLeft; 
+        animation-duration: 1s;
+         animation-timing-function: ease-out;
     }
     &__btn{
         display: grid;
         grid-template-columns: repeat(2,max-content);
         align-items: center;
         grid-column-gap: 2.5rem;
+
     }
     &__play{
         display: grid;
@@ -33,6 +38,9 @@
         grid-column-gap: 1.5rem;
         cursor: pointer;
         transition: all .2s;
+        animation:  moveInBottom .5s ease-out .75s ;
+        -webkit-animation:  moveInBottom .5s ease-out .75s ;
+        animation-fill-mode: backwards;
       &--arrow{
      background-color: $color-white;
         width: 3rem;
@@ -58,6 +66,9 @@
         justify-content: center;
         grid-column-gap: 2rem;
         align-items: center;
+        animation:  moveInBottom .5s ease-out .75s ;
+        -webkit-animation:  moveInBottom .5s ease-out .75s ;
+        animation-fill-mode: backwards;
         &-text{
             @include heading_secondary($small-font,$color-white);
         }

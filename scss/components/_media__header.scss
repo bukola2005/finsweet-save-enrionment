@@ -1,0 +1,35 @@
+.media__header{
+    background-color:$green-tertiary;
+    grid-column: full-start / full-end;
+    margin: 10rem 0;
+    padding: 9rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(38rem,1fr));
+    gap: 7rem;
+
+    .media__sidelist{
+        display: grid;
+        grid-template-rows: repeat(3,max-content);
+        grid-row-gap: 3rem;
+        padding: 2.5rem;
+        background-color: $color-white;
+        border-radius: 12px;
+        -webkit-border-radius: 12px;
+        -moz-border-radius: 12px;
+        -ms-border-radius: 12px;
+        -o-border-radius: 12px;
+
+        &-post{
+            display: grid;
+            grid-template-columns:repeat(auto-fit,minmax(20rem,1fr));
+            // grid-column-gap: 2rem;
+            grid-row-gap: 2rem;
+            align-items: center;
+            justify-content: center;
+            
+            // &-1{
+            //     align-self: start;
+            // }
+        }
+}
+}

@@ -1,4 +1,17 @@
 .about__awards{
-    background-color: firebrick;
+    // background-color: firebrick;
     grid-column: center-start/ center-end;
+    // margin: 7rem 0;
+    &--display{
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(25rem,1fr));
+        align-items: center;
+        justify-content: center;
+        gap: 4rem;
+
+        & > div{
+            justify-self: center;
+            align-self: center;
+        }
+    }
 }

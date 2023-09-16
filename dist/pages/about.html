@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
@@ -17,50 +20,49 @@
         <ul class="nav">
             <li class="nav__item"><a href="home.html" class="nav__link">Home</a></li>
             <li class="nav__item"><a href="about.html" class="nav__link current-page">About us</a></li>
-            <li class="nav__item"><a href="#" class="nav__link">What We Do</a></li>
-            <li class="nav__item"><a href="#" class="nav__link">Media</a></li>
-            <li class="nav__item"><a href="#" class="nav__link">Contact</a></li>
+            <li class="nav__item"><a href="what-we-do.html" class="nav__link">What We Do</a></li>
+            <li class="nav__item"><a href="media.html" class="nav__link">Media</a></li>
+            <li class="nav__item"><a href="contactus.html" class="nav__link">Contact</a></li>
     
-             <a href="#" class="btn--blue nav__btn">Donate</a>   
+             <a href="donation.html" class="btn--blue nav__btn">Donate</a>   
         </ul>
-        <div class="sidebar">
-            <input type="checkbox" class="navigation__checkbox" id="navi-toogle">
-            <label for="navi-toogle" class="navigation__button">
-              <span class="navigation__icon">&nbsp;</span>
-            </label>
-          </div>
+        <i class="fa-solid fa-bars fa-4x open-menu"></i>
+    <i class="fa-solid fa-xmark fa-4x  close-menu"></i>
        </nav>
        
        <header class="about__header">
         <div>
-            <h3>Know about us</h3>
-            <h2>We are a nonprofit team working worldwide</h2>
+            <h3 class="heading_sub mb-md">Know about us</h3>
+            <h2 class="heading_primary">We are a nonprofit team working worldwide</h2>
         </div>
 
         <div>
-            <h3>Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Suspendisse varius enim elementum tristique.</p>
+            <h3 class="heading_mini mb-sm">Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.</h3>
+            <p class="paragh_blue">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Suspendisse varius enim elementum tristique.</p>
         </div>
        </header>
 
 
        <section class="about__video">
-        video
+        <video  controls id="bg-video">
+            <source src="/img/video (2160p).mp4" type="video/mp4">
+        </video>
        </section>
 
        <section class="about__mission">
      
-        <div>
-            <h4>our mission</h4>
-            <h3>We make the world we save our own environment</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.</p>
+        <div class="about__mission--content">
+            <h4 class="sub_small mb-sm">our mission</h4>
+            <h3 class="sub_text mb-tn">We make the world we save our own environment</h3>
+            <p class="paragh_blue">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.</p>
         </div>
 
-        <div>
-            <h4>our Vision</h4>
-            <h3>Plant more trees to make world air pollution free</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.</p>
+        <div class="about__mission--content">
+            <h4 class="sub_small mb-sm">our Vision</h4>
+            <h3 class="sub_text mb-tn">Plant more trees to make world air pollution free</h3>
+            <p class="paragh_blue">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.</p>
         </div>
+    </section>
         <div class="support">
             <div class="support__text">
                 <h3 class="sub_small">our Supporters</h3>
@@ -76,89 +78,175 @@
               
             </div>
            </div>
-       </section>
 
        <section class="about__awards">
-        <h2>Awards & Recognitions</h2>
+        <h2 class="heading_primary uctext mb-hg">Awards & Recognitions</h2>
 
-        <div>
+        <div class="about__awards--display uctext">
             <div>
-                <img src="" alt="">
-                <h4>2021</h4>
-                <h3>Best NGO Award</h3>
-                <p>Berlin, Germany</p>
+                <img src="/img/Award badge-2.svg" alt="Award" class="mb-sm">
+                <h4 class="heading_mini">2021</h4>
+                <h3 class="heading_well">Best NGO Award</h3>
+                <p class="paragh_blue">Berlin, Germany</p>
             </div>
 
             <div>
-                <img src="" alt="">
-                <h4>2018</h4>
-                <h3>Global Award</h3>
-                <p>New York, USA</p>
+                <img src="/img/Award badge6.svg" alt="Award" class="mb-sm">
+                <h4 class="heading_mini">2018</h4>
+                <h3  class="heading_well">Global Award</h3>
+                <p class="paragh_blue">New York, USA</p>
             </div>
 
             <div>
-                <img src="" alt="">
-                <h4>2014</h4>
-                <h3>Foresto Award</h3>
-                <p>New Delhi, India</p>
+                <img src="/img/Award badge.svg" alt="Award" class="mb-sm">
+                <h4 class="heading_mini">2014</h4>
+                <h3  class="heading_well">Foresto Award</h3>
+                <p class="paragh_blue">New Delhi, India</p>
             </div>
 
             <div>
-                <img src="" alt="">
-                <h4>2010</h4>
-                <h3>Earth Saver Award</h3>
-                <p>Vienna, Austria</p>
+                <img src="/img/Award badge-1.svg" alt="Award" class="mb-sm">
+                <h4 class="heading_mini">2010</h4>
+                <h3 class="heading_well">Earth Saver Award</h3>
+                <p class="paragh_blue">Vienna, Austria</p>
             </div>
         </div>
       
        </section>
+
+
        <section class="about__ourjourney">
         
-    <div>
-        <h3>OUR JOURNEY </h3>
-        <h2>How we raised 34M</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh.</p>
+    <div class="ourjourney__text">
+        <h3 class="sub_small-1 mb-sm">OUR JOURNEY</h3>
+        <h2 class="heading_medium mb-tn">How we raised 34M</h2>
+        <p class="paragh_white mb-lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh.</p>
 
-        <div>
-            <div>
-                <h3>34M+</h3>
-                <p>Donation Received</p>
+        <div class="ourjourney__stats">
+            <div class="ourjourney__stats-row">
+                <h3 class="sub_text-white">34M+</h3>
+                <p class="paragh_white">Donation Received</p>
             </div>
 
-            <div>
-                <h3>400+</h3>
-                <p>Volunters</p>
+            <div class="ourjourney__stats-row">
+                <h3 class="sub_text-white">400+</h3>
+                <p  class="paragh_white">Volunters</p>
             </div>
 
-            <div>
-                <h3>40K+</h3>
-                <p>Trees planted</p>
+            <div class="ourjourney__stats-row">
+                <h3 class="sub_text-white">40K+</h3>
+                <p  class="paragh_white">Trees planted</p>
             </div>
         </div>
         
     </div>
 
-    <div>
-        <img src="" alt="">
-    </div>
+        <img src="/img/jounry_img.svg" alt="img">
        </section>
 
        <section class="about__ourteam">
-       <h2>Meet our team</h2>
-       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
+       <h2 class="heading_primary uctext mb-tn">Meet our team</h2>
+       <p class="paragh_blue uctext">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
 
-       <div>
+       <div class="about__teams">
         <div>
-           <img src="" alt="">
+           <img src="/img/Image.svg" alt="img">
            <h3>Leonard John Davies</h3>
            <p>Cofounder, CEO</p> 
 
-           <div>
-            <img src="" alt="">
-            <img src="" alt="">
-            <img src="" alt="">
+           <div class="teams__icon">
+            <img src="/img/Negative face.svg" alt="Facebook">
+            <img src="/img/Negative twitter.svg" alt="twitter">
+            <img src="/img/Negative.svg" alt="Linkdin">
            </div>
         </div>
+
+
+        <div>
+            <img src="/img/Image-2.svg" alt="img">
+            <h3>Francis Weber</h3>
+            <p>Vice Chairman</p> 
+ 
+            <div class="teams__icon">
+             <img src="/img/Negative face.svg" alt="Facebook">
+             <img src="/img/Negative twitter.svg" alt="twitter">
+             <img src="/img/Negative.svg" alt="Linkdin">
+            </div>
+         </div>
+
+         <div>
+            <img src="/img/Image-4.svg" alt="img">
+            <h3>Kyla Obrien</h3>
+            <p>Head of Authority</p> 
+ 
+            <div class="teams__icon">
+             <img src="/img/Negative face.svg" alt="Facebook">
+             <img src="/img/Negative twitter.svg" alt="twitter">
+             <img src="/img/Negative.svg" alt="Linkdin">
+            </div>
+         </div>
+
+         <div>
+            <img src="/img/Image-6.svg" alt="img">
+            <h3>Adrian Dixon</h3>
+            <p>Support Executive</p> 
+ 
+            <div class="teams__icon">
+             <img src="/img/Negative face.svg" alt="Facebook">
+             <img src="/img/Negative twitter.svg" alt="twitter">
+             <img src="/img/Negative.svg" alt="Linkdin">
+            </div>
+         </div>
+
+         <div>
+            <img src="/img/Image-1.svg" alt="img">
+            <h3>Freddy Busby</h3>
+            <p>Project Manager</p> 
+ 
+            <div class="teams__icon">
+             <img src="/img/Negative face.svg" alt="Facebook">
+             <img src="/img/Negative twitter.svg" alt="twitter">
+             <img src="/img/Negative.svg" alt="Linkdin">
+            </div>
+         </div>
+
+         <div>
+            <img src="/img/Image-3.svg" alt="img">
+            <h3>Dale Banks</h3>
+            <p>Accountatnt, Finance</p> 
+ 
+            <div class="teams__icon">
+             <img src="/img/Negative face.svg" alt="Facebook">
+             <img src="/img/Negative twitter.svg" alt="twitter">
+             <img src="/img/Negative.svg" alt="Linkdin">
+            </div>
+         </div>
+
+
+         <div>
+            <img src="/img/Image-5.svg" alt="img">
+            <h3>Miriam Middleton</h3>
+            <p>Cofounder, CEO</p> 
+ 
+            <div class="teams__icon">
+             <img src="/img/Negative face.svg" alt="Facebook">
+             <img src="/img/Negative twitter.svg" alt="twitter">
+             <img src="/img/Negative.svg" alt="Linkdin">
+            </div>
+         </div>
+
+         <div>
+            <img src="/img/Image-7.svg" alt="img">
+            <h3>Ellen Walton</h3>
+            <p>Vice Chairman</p> 
+ 
+            <div class="teams__icon" >
+             <img src="/img/Negative face.svg" alt="Facebook">
+             <img src="/img/Negative twitter.svg" alt="twitter">
+             <img src="/img/Negative.svg" alt="Linkdin">
+            </div>
+         </div>
+
        </div>
        </section>
 
@@ -167,8 +255,8 @@
             <h2 class="heading_medium mb-md">You can contribute to make the environment greener!</h2>
     
             <div class="button-row">
-                <button class="btn--green">Join as a volunteer</button>
-                <button class="btn--white btn--white-bl">Donate</button>
+                <a href="#popup" class="btn--green">Join as a volunteer</a>
+                <a href="donation.html" class="btn--white btn--white-bl">Donate</a>
             </div>
         </div>
        </section>
@@ -226,7 +314,7 @@
                     <h3 class="heading_mini">Say no to plastic usage and save the planet</h3>
                 </div>
     
-                <a href="#" class="btn--arrow "><span class="event__btn">&rarr;</span></a>
+                <a href="event-readmore.html" class="btn--arrow "><span class="event__btn">&rarr;</span></a>
             </div>
     
             <div class="event__item">
@@ -245,7 +333,7 @@
                     <h3 class="heading_mini">Weekly cleaning program</h3>
                 </div>
     
-                <a href="#" class="btn--arrow "><span class="event__btn">&rarr;</span></a>
+                <a href="event-readmore.html" class="btn--arrow "><span class="event__btn">&rarr;</span></a>
             </div>
         </div>
        </section>
@@ -288,5 +376,49 @@
             </div>
         </div>
        </footer>
+
+       <div class="popup" id="popup">
+        <div class="popup__content">
+        <a href="#section-tours" class="popup__close">&times;</a>
+        <h2 class="heading_primary">Join as a volunteer</h2>
+        <p class="paragh_blue mb-lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspen varius enim in eros elementum tristique. </p>
+        <a href="#section-tours" class="popup__close">&times;</a>
+            <form class="form">
+    
+                <div class="form__grid mb-tn">
+                    <div>
+                        <div class="mb-sm">
+                            <label for="first-name" class="form__label">First Name</label>
+                        </div>
+                    <input type="text" name="first-name" id="first-name" class="form__input" >
+                    </div>
+        
+                    <div>
+                        <div class="mb-sm"><label for="last-name" class="form__label">Last Name</label></div>
+                        <input type="text" name="last-name" id="last-name"class="form__input" >
+                    </div>
+                </div>
+               
+                <div class="mb-tn">
+                    <div class="mb-sm">
+                        <label for="email-id" class="form__label">Email Id</label>
+                    </div>
+                
+                    <input type="email" name="email-id" id="email-id" class="form__input" >
+                </div>
+                
+                <div class="form__message mb-md">
+                    <div class="mb-sm">
+                        <label for="message" class="form__label">Message</label>
+                    </div>
+                    <input type="text" class="form__input">
+                </div>
+                <button class="btn--green form__btn">Send message</button>
+            </form>
+    
+            
+        </div>
+      </div>
+       <script src="/app.js"></script>
 </body>
 </html>

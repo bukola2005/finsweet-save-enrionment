@@ -1,0 +1,12 @@
+.contact__map{
+    grid-column: full-start / full-end;
+
+    .map{
+        width: 100%;
+    }
+
+    .map-wrapper{
+        max-width: 760px;
+    }
+   
+}

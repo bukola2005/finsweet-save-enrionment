@@ -79,8 +79,8 @@
 .heading{ 
 &_primary{
     @include heading_primary($medium-font,$primary-text);
-    // width: 80%;
-    //     height: auto;
+    animation:  moveInRight  1s ease-out;
+    -webkit-animation:  moveInRight  1s ease-out;
 }
 &_medium{
     @include heading_primary($medium-font, $color-white);
@@ -89,13 +89,18 @@
     @include heading_primary($small-font,$primary-text);
     text-transform: uppercase;
     letter-spacing: 2px;
+    animation:  moveInRight  1s ease-out;
+    -webkit-animation:  moveInRight  1s ease-out;
     &::before{
         background-color: $primary-text;
         height: 2px;
-        width: 4.5rem;
+        width: 4.5rem;  
         content: " ";
         display: inline-block;
         margin-right: 1rem;
+        @include respond(phone){
+           display: none
+           }
     }
 }
 &_mini{
@@ -104,6 +109,10 @@
 
 &_little{
     @include heading_primary($small-font,$color-white);
+}
+
+&_well{
+    @include heading_primary($small-font,$primary-text);
 }
 &-4{
     @include heading_primary($mini-font,$color-white);
@@ -133,11 +142,20 @@
     }
     &_text{
         @include heading_secondary($mini-font,$primary-text);
+
+        &-white{
+            @include heading_secondary($mini-font,$color-white);
+        }
     }
     &_small{
         @include heading_secondary($small-font,$primary-text);
         letter-spacing: 2px;
         text-transform: uppercase;
+        &-1{
+            letter-spacing: 2px;
+        text-transform: uppercase;
+            @include heading_secondary($small-font,$color-white);
+        }
     }
 
 }

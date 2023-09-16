@@ -1,0 +1,29 @@
+.event__header{
+    margin: 10rem 0;
+    grid-column: full-start /full-end ;
+    background-color: $green-tertiary;
+    padding: 8rem 4rem;
+
+    & >h2{
+        text-align: center;
+        padding: 7rem;
+    }
+
+    .event__sub{
+        margin: 0 autos;
+        display: grid;
+        grid-template-columns: repeat(2,minmax(25rem, 1fr));
+        gap: 4rem;
+        align-items: center;
+        justify-content: center;
+        & > div{
+           display: flex;
+           gap: 1rem;
+           align-items: center;
+        }
+         & > div:first-child{
+            justify-self: flex-end;
+         }
+        
+    }
+}

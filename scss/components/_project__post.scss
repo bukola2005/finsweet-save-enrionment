@@ -1,0 +1,16 @@
+.project__post{
+    background-color: $color-off-white;
+    grid-column: full-start / full-end;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(40rem,1fr));
+    align-items: center;
+    justify-content: center;
+    grid-gap: 5rem;
+    padding: 10rem;
+    margin-top: 7rem;  
+    &-1{
+      display: flex;
+        gap: 2rem;
+        align-items: flex-start;
+    }
+}

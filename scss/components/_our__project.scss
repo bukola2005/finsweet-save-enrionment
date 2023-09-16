@@ -1,0 +1,27 @@
+.our__project{
+    background-color: #0000;
+    grid-column: center-start / center-end;
+    margin-top: 10rem;
+    // margin-bottom: 7rem;
+    display: grid;
+    grid-template-rows: repeat(8,max-content);
+    align-items: center;
+    // justify-self: center;
+    // text-align: center;
+    padding: 7rem;
+
+    .project-readmore-img{
+        justify-self: center;
+    }
+
+   .project_list{
+    // text-decoration: dotted;
+    // list-style: decimal;
+    li{
+        list-style: disc;
+        font-size: $mini-font;
+        color: $color-black;
+
+    }
+   } 
+}

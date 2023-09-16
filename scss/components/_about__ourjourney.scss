@@ -1,4 +1,36 @@
 .about__ourjourney{
-    background-color: fuchsia;
+    background-color: $color-black;
     grid-column: center-start/ center-end;
+    padding: 6rem 0;
+    margin: 8rem 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(35rem,1fr));
+    align-items: center;
+    justify-content: end;
+    gap: 5rem;
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+
+
+   
+
+    .ourjourney__text{
+        padding: 0 4rem;
+    }
+
+
+    .ourjourney__stats{
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(10rem,1fr));
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+       
+    }
+
+
 }
+
